@@ -1,0 +1,31 @@
+.form-check{
+    position: relative;
+    display: block;
+    border-radius:5px;
+   
+}
+.contain-closed { 
+    position: absolute;
+    right:4%;
+    top:15%;
+    border-radius:5px;
+    overflow:hidden; 
+    height:180px;
+ } 
+
+ .contain-closed:hover{
+    height:auto;
+    width:40%;
+ }
+ .btn-outline-danger:hover{
+    background-color: #740000;
+    
+}
+
+.btn-outline-danger{
+    right:4%;
+    top:15%;
+    position: fixed;
+
+
+ }

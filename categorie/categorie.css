@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'chocolate';
+    src: url('fonts/chocolate-cookie-font/ChocolateCookie-gx2JR.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'patua one';
+    src: url('fonts/patua-one/');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.div {
+    font-family: 'patua one';
+}
+.container{
+  top:20%;
+  position: absolute;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+.col-md-9{
+  background-color: rgba(250, 239, 239, 0.788);
+  left:33%;
+  position: absolute;
+  border-radius: 20px;
+  max-width: 100%;
+}
+a, a:visited {
+  text-decoration: none;
+  font-weight: bold; 
+  display: inline-block;
+  color:#717171;
+}
+a:hover {
+  text-decoration: none;
+  color: #740000;
+
+}
+p{
+  color:#740000;
+}
+img{
+  margin-bottom:20px;
+}
+.list-group{
+  opacity: 0.3;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  
+}
+.list-group-item {
+  background-color: rgba(250, 239, 239, 0.788) !important;
+
+}
+.list-group:hover{
+  opacity: 1;
+}
+

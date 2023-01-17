@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'chocolate';
+    src: url('fonts/chocolate-cookie-font/ChocolateCookie-gx2JR.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'patua one';
+    src: url('fonts/patua-one/');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+div{
+   font-family: 'patua one';
+}
+body{
+    background-image:url('img/banner-marble-bkg.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    position: relative;
+    vertical-align: top;
+}
+#logo img {
+    position: fixed;
+    top: -40px;
+    left: -140px;
+    width: 400px;
+}
+#logo p {
+    position: fixed;
+    top: 40px;
+    left: 100px;
+    color: #740000;
+    font-family: 'chocolate';
+    font-weight:1000;
+    font-size: medium;
+}
+.sm-icons{
+    box-sizing: border-box;
+    float: right;
+    margin-top: 30px;
+}
+.social {
+    display: inline; 
+    position:relative;
+}
+.sm-img {
+    margin-left: -20px;
+
+    display: inline-block;
+}
+.try{
+    bottom: -4px;
+    left: 0px;
+    position:fixed;
+
+}
+nav {
+    position:fixed;
+    top: 10%;
+
+    left: 31%;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+  
+  nav a {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #777777;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+  }
+  
+  nav a:before,
+  nav a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+  }
+  
+  nav a:before {
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+
+  }
+  
+  nav a:after {
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px;
+  }
+  
+  nav a:nth-child(2n+1):before {
+    background-color: yellow;
+  }
+  
+  nav a:nth-child(2n+1):after {
+    background-color: red;
+  }
+  
+  nav a:nth-child(2n):before {
+    background-color: #00e2ff;
+  }
+  
+  nav a:nth-child(2n):after {
+    background-color: #89ff00;
+  }
+  
+  nav a:nth-child(3n):before {
+    background-color: purple;
+  }
+  
+  nav a:nth-child(3n):after {
+    background-color: palevioletred;
+  }
+  
+  #indicator {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+  }
+  
+  nav a:hover {
+    color: #740000;
+    text-decoration: none;
+  }
+  
+  nav a:hover:before,
+  nav a:hover:after {
+    transform: scale(1);
+  }
+  nav a:nth-child(1):hover ~ #indicator {
+    background: linear-gradient(130deg, yellow, red);
+  }
+  nav a:nth-child(2):hover ~ #indicator {
+    left: 36%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+  }
+  nav a:nth-child(3):hover ~ #indicator {
+    left: 62%;
+    background: linear-gradient(130deg, purple, palevioletred);
+  }
+  nav a:nth-child(4):hover ~ #indicator {
+    left: 88%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+  }
+  nav a:nth-child(5):hover ~ #indicator {
+    left: 119%;
+    background: linear-gradient(130deg, yellow, red);
+  }
+  nav a:nth-child(6):hover ~ #indicator {
+    left: 150%;
+    background: linear-gradient(130deg, purple, palevioletred);
+  }
+  nav a:nth-child(7):hover ~ #indicator {
+    left: 176%;
+    background: linear-gradient(130deg, yellow, red);
+  }
+  footer  {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    bottom: -4px;
+    right:39%;
+    position: fixed;
+}
+  footer a {
+  text-decoration: none;
+  padding: 5px;
+  color: rgb(82, 82, 82);
+}

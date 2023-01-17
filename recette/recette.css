@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'chocolate';
+    src: url('fonts/chocolate-cookie-font/ChocolateCookie-gx2JR.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'patua one';
+    src: url('fonts/patua-one/');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.div {
+    font-family: 'patua one';
+}
+
+
+.container{
+   display: flex;
+    height:550px;
+    background-color: rgba(250, 239, 239, 0.788);
+    top: 20%;
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 60%;
+    left:17%;
+    position: absolute;
+    
+}
+
+.desc {
+    margin-top:10%;
+    margin-left:7%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-family: 'patua one';
+}
+.prop{
+    margin-top: 40%;
+    left:20%;
+    position:absolute;
+    display:flex; 
+  
+}
+
+.prop p{
+    margin-top :4%;
+    margin-right: 3%;
+    margin-left:2%;
+    font-family: 'patua one';
+    color: #740000;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+.prop img {
+    width:3%;
+    display: block;
+    margin-top: 2%;
+    aspect-ratio: 1.25;
+    object-fit: contain;
+}
+.ing{
+    position:relative;
+    margin-top:55%;
+    margin-left:-65%;
+    margin-right:25%;
+}
+
+.ing p {
+    margin-left: 10%;
+}
+.ing img {
+    width:14%;
+    margin-top:0%;
+    aspect-ratio: 1.25;
+    object-fit: contain;
+    display: inline;
+}

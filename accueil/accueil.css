@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'chocolate';
+  src: url('fonts/chocolate-cookie-font/ChocolateCookie-gx2JR.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'patua one';
+  src: url('fonts/patua-one/PatuaOne-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {box-sizing: border-box;}
+.mySlides {
+    display:none;
+
+
+}
+.mySlides fade-in img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: absolute;
+  margin: auto;
+  top:20%;
+  left:25%;
+
+}
+
+/* Caption text */
+.text {
+  color:#777777;
+  font-size: 20px;
+  padding:20px 12px;
+  position: absolute;
+  background-color: rgba(250, 239, 239, 0.788);
+
+  bottom:5%;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: 'chocolat';
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  left:50%;
+  position: relative;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade-in {
+  animation-duration: 1.5s;
+  animation: fade-in 1.5s;
+}
+
+@keyframes fade-in {
+  from {opacity: 0.7} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.scontent{
+    position: absolute;
+    left:6%; 
+    top:14%;
+    font-family: 'patua one';
+    color: #04030F;
+    opacity: 0.5;
+    margin:0%;
+    padding:0;
+
+
+}
+.left-side{
+    width: 500px; 
+    height: 394px;
+    background-color:rgba(250, 239, 239, 0.788);
+    border-radius:20px;
+    margin-left: 880px;
+    top: 183px;
+    position: absolute;
+    word-wrap: break-word;
+  }
+
+.left-side h2{
+  font-family: 'chocolat';
+  color: #740000;
+  position:absolute;
+  top:15%;
+  left:21%;
+
+}
+.left-side p{
+  font-family: 'chocolat';
+  position:relative;
+  top:35%;
+  left:0%;
+  text-align: center;
+  font-size: 16px;
+  color: #7a0b0b;
+  opacity:0.7;
+
+}
+
+.button{
+    padding:10px 20px;
+    border:none;
+    border: 1px solid #740000;
+    color:#740000;
+    left:24%;
+    top:80%;
+    padding: 10px 80px;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+  }
+
+ .button:hover, .button:active {
+    background-color: #7a0b0b;
+    color: white;
+    opacity: .6;
+ }
+
+
+.section{
+  font-family: 'chocolat'; 
+  position:absolute;
+  width: 95%; 
+  left:2%;
+  height: 600px;
+  background-color:rgba(250, 239, 239, 0.788);
+  border-radius: 20px;
+  display: block;
+}
+.section a {
+  position: relative;
+  left:2%;
+  top:87%;
+  text-decoration: none;
+  color: #3a3939;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+
+.section a:hover {
+  color: #740000;
+  text-decoration: none;
+  
+
+}
+#carous1, #carous2,#carous3,#carous4 {
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  left:50%;
+  bottom:0%; 
+  background-color: none;
+}
+
+#carous1 .slide, #carous2 .slide, #carous3.slide, #carous4.slide{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+#carous1 .slide.active, #carous2 .slide.active, #carous3 .slide.active, #carous4 .slide.active{
+  opacity: 1;
+  background-color: transparent;
+}
+
+#carous1 img, #carous2 img, #carous3 img, #carous4 img {
+  width: 100%;
+  height: 100%;
+  background-color: none;
+
+}
+.slide h1 {
+  color: #3a3939;;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: 'patua one';
+
+}
+
+.slide p {
+  position: absolute;
+  left: 55%;
+  font-family: 'patua one';
+  bottom:56%;
+}
+.slide a {
+  position: absolute;
+  left: 85%;
+  font-family: 'patua one';
+  top:44%;
+  font-size: medium;
+  opacity: 0.5;
+}
+.previous {
+  background-color: transparent;
+  color: #740000;
+  border: 1px solid #740000;
+  padding:10px 20px;
+  border-radius: 50%;
+  top:50%;
+  left:37%;
+  position:absolute;
+  font-size: large;
+}
+
+.next {
+  background-color: transparent;
+  color: #740000;
+  border-radius: 50%;
+  top:50%;
+  left:42%;
+  position:absolute;
+  border: 1px solid #740000;
+  padding:10px 20px;
+  font-size: large;
+}
+.previous:hover, .next:hover{
+  color:white;
+  background-color: #740000;
+}
+
