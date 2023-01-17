@@ -96,7 +96,7 @@ class gesRecetteModel extends tempModel {
         }
         try {
             $query = $DB_con->prepare($sql);
-            $query->bindValue(':cadreId', $recetteId, PDO::PARAM_INT);
+            $query->bindValue(':cadreId', $cadreId, PDO::PARAM_INT);
     
         } catch (Exception $e) {
             echo $e->getMessage();

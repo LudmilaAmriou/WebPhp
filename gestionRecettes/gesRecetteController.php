@@ -30,7 +30,6 @@ class gesRecetteController{
     }
 
     public function delRecette(){
-
         $cadreId = $_POST['cadreId'];
         $m = new gesRecetteModel();
         return $m->delRecette($cadreId);  

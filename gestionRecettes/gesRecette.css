@@ -1,0 +1,59 @@
+table {
+	border-collapse: collapse;
+    
+}
+table td {
+	padding: 15px;
+    border-radius: 20px;
+}
+
+table td {
+	color: #636363;
+	border: 2px solid white;
+}
+table tr {
+	background-color: none;
+    border: 2px solid white;
+    border-top: 5px white;
+}
+
+table tr th {
+	background-color: none;
+    border: 2px solid white;
+    border-top: 5px white;
+    color:#5a5959;
+    text-align: center;
+}
+
+table  tr:nth-child(odd) {
+	background-color: none;
+}
+
+button {
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    color:#3b3b3b; 
+}
+button:hover {
+    background-color:#740000;
+    color:white;
+    opacity:0.8;
+}
+.create{
+    position:absolute;
+    top:-5.5%;
+    right:0%;
+    background-color: rgba(250, 239, 239, 0.788);
+    border-color: white;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 10px;
+    border-style: solid;
+}
+.create:hover{
+    border-color:#740000;
+}

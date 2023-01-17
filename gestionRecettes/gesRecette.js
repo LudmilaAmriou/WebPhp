@@ -36,8 +36,8 @@ $(document).ready(function(){
                 });
 
                 $(document).on('click', '.supBtn', function() {
-                    var recetteId = $(this).data('id');
-                    $(this).parent().html('<button class="confBtn" data-id="'+recetteId+'">Confirmer?!</button>');
+                    var cadreId = $(this).data('id');
+                    $(this).parent().html('<button class="confBtn" data-id="'+cadreId+'">Confirmer?!</button>');
                 });
                 
                     $(document).on('click', '.saveBtn', function() {
@@ -63,12 +63,12 @@ $(document).ready(function(){
                         });
                     });
                     $(document).on('click', '.confBtn', function() {
-                        var recetteId = $(this).data('id');     
+                        var cadreId = $(this).data('id');     
                         var action3 = 'delRecette';
                         $.ajax({
                                 url: 'gesRecette.php',
                                 type: 'POST',
-                                data: {action3:action3,recetteId: recetteId},
+                                data: {action3:action3,cadreId: cadreId},
                                 success: function(response) {
                                     console.log(response);
                             }

@@ -8,6 +8,7 @@ Class gesRecetteView {
 	<link href="/categorie/categorie.css" rel="stylesheet" type="text/css" />
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script  type="text/javascript"  src="/gestionRecettes/gesRecette.js"></script>
+    <link  rel="stylesheet" type="text/css"  href="/gestionRecettes/gesRecette.css?">
     <!-- Custom CSS -->
 	<div class="container">
         <div class="row">
@@ -99,7 +100,7 @@ Class gesRecetteView {
 			<?php
 				
 				  $cf = new gesRecetteController();
-                  if (!isset($_POST["action2"]))
+                  if (!isset($_POST["action2"]) && !isset($_POST["action3"]))
 				  $row= $cf->recherche();
                   
 				  if ($row >0){
@@ -135,7 +136,9 @@ Class gesRecetteView {
 			?>
        
 		</div>
-        
+        <div class ="create">
+        <a href="addRecette.php">Ajouter une recette</a>
+        </div>
 	 <?php
 	}    
 }
