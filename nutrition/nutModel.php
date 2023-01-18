@@ -9,7 +9,7 @@ class nutModel extends tempModel {
    
   public function ingInfo(){
     $DB_con = parent::connexion($this->DB_host,$this->DB_name,$this->DB_pass,$this->DB_user);
-    $sql = 'SELECT nomIng, any_value(info) AS info, any_value(nbCalorie) AS nbCalorie ,any_value(saisonIng) AS saisonIng,any_value(healthy) AS healthy
+    $sql = 'SELECT any_value(nutId) AS nutId, nomIng, any_value(info) AS info, any_value(nbCalorie) AS nbCalorie ,any_value(saisonIng) AS saisonIng,any_value(healthy) AS healthy
             FROM nutrition 
             JOIN ingredient ON ing_id = ingId
             GROUP BY nomIng;';
