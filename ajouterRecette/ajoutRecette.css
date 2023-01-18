@@ -1,0 +1,44 @@
+.information {
+    position: absolute;
+    top: 66%;
+    left: 48%;
+    width: 900px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(250, 239, 239, 0.788);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    
+  }
+    
+  
+  
+.information form input,  .information form select{
+    width: 50%;
+    display: block;
+    font-size: 16px;
+    color: black;
+    border: 1px solid #740000;
+    opacity:0.5;
+    background: transparent;
+    border-radius:5px;
+    margin-left:20%;
+  }
+.information form label {
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+    margin-left:20%
+  }
+  
+.information form input:focus ~ label {
+    opacity:1;
+    font-size: 12px;
+  }
+
+  input[type="button"], input[type="submit"]{
+    margin-top:40px;
+    width:10px;
+  }
