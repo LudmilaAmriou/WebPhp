@@ -9,7 +9,7 @@
         ?>  
    
 
-    <link  rel="stylesheet" type="text/css"  href="/ajouterRecette/ajoutRecette.css">
+    <link  rel="stylesheet" type="text/css"  href="/ajouterRecette/ajoutRecette.css?">
         <div class = "information">
         <form id="add-recipe-form" method = "POST" action=""  enctype="multipart/form-data">
          <label for="titreCadre">Nom recette:</label>

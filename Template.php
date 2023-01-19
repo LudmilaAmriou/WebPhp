@@ -1,7 +1,8 @@
 <?php
 require_once('./template/tempController.php');
-
+session_start();
 $c = new tempController();
 $c->afficher_template();
-$c->user_connect();
+$user = $c->user_connect();
+
 ?>

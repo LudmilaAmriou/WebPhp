@@ -1,4 +1,5 @@
 <?php
+session_start();
 class USER
 {
     private $db;
@@ -20,7 +21,7 @@ class USER
           {
              if($upass == $userRow['password'])
              {
-                $_SESSION['user_session'] = $userRow['userId'];
+                $_SESSION['user_session'] = $userRow;
                 return true;
              }
              else
@@ -53,6 +54,10 @@ class USER
         session_destroy();
         unset($_SESSION['user_session']);
         return true;
+   }
+
+   public function user(){
+    return  $_SESSION['user_session'];  
    }
 }
 ?>

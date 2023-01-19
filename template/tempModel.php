@@ -20,7 +20,7 @@ class tempModel {
 
    protected function deconnexion($DB_con){
     unset($_SESSION["user_session"]);
-    header("Location:accueil.php");
+    header("Location:Template.php");
    }
 
    protected function decon($DB_con){
@@ -58,7 +58,8 @@ class tempModel {
     
         } 
     }
-    return $user;
+    $USER = $user->user();
+    return $USER;
 }
 
    
