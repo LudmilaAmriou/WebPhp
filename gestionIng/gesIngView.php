@@ -13,12 +13,13 @@ Class gesIngView {
     <div class="container">
         <table id="dataTable">
             <tr>
-                <th>Id</th>
+                
                 <th>Nom de l'ingredient</th>
                 <th>Nombre de calories (Kcal)</th>
                 <th>Autres informations nutritionnelles</th>
                 <th>Saison</th>
                 <th>Healthy</th>
+                <th>Modification</th>
             </tr>
             <?php
             $c = new nutController();
