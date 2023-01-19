@@ -17,6 +17,18 @@ class tempController{
         $v = new templateView();
         return $v->afficher_menu();  
     }
+
+    public function afficher_login(){
+        $v = new templateView();
+        return $v->afficher_login(); 
+    }
+
+    public function user_connect(){
+        $m = new tempModel();
+        return $m->user_connect();
+    }
+    
+    
     public function footer(){
         $v = new templateView();
        
@@ -25,6 +37,7 @@ class tempController{
     public function afficher_template(){
         $this->afficher_entete();
         $this->afficher_menu();
+        $this->afficher_login();
         $this->footer();
       
     }

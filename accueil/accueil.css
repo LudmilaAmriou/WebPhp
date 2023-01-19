@@ -250,3 +250,22 @@
   background-color: #740000;
 }
 
+.connect{
+  background: none;
+  color: #740000;
+  border: 1px solid #740000;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; 
+  position:absolute;
+  padding:6px;
+  border-radius: 5px;
+  top: 47px;
+  right:180px;
+  text-decoration: none;
+  }
+  .connect:hover{
+    text-decoration: none;
+    color:#bbb;
+    border: 1px solid #bbb;
+  }

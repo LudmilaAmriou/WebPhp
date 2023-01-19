@@ -7,7 +7,8 @@ Class accueilView {
 
     public function afficher_diapo(){
      ?>
-        <link href="/accueil/accueil.css?v=1" rel="stylesheet" type="text/css" />
+        <a href= '/Template.php' class = "connect" >Se connecter</a>
+        <link href="/accueil/accueil.css?" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -51,14 +52,19 @@ Class accueilView {
       ?>
     <?php
         $row = $cf->recette($type); 
+       
         $href = $row[0]['cadreId'];
         echo "<div id=carous$id>";
         echo '<div class = "slide active">';
+        if (count($row)){
         echo '<h1>'.$row[0]['titreCadre'] .'</h1>'; 
         echo '<img style ="width: 400px; height: 390px; border-radius: 50px;" src="data:image/jpeg;base64,' . base64_encode($row[0]['imageId']) . '" alt="lool" />';
         echo '<p>'.$row[0]['descCadre'].'...</p>'; 
         echo "<a href='/Recette.php?href=$href'> Lire la suite</a>";
-        
+        }
+        else{
+            echo '<h4 style="margin-top:30%">Pas de recette dans cette categorie pour le moment.. :/</h4>';
+        }
         echo '</div>';
         $i = 0;
         foreach ($row as $item){  
@@ -80,7 +86,6 @@ Class accueilView {
      <script  type="text/javascript"  src="/accueil/accueil.js?v=1"></script>
      <?php
     }
-
     
 
     public function afficher_categorie(){

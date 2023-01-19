@@ -1,4 +1,5 @@
 <?php
+require_once('./user.php');
 class tempModel {
    protected $DB_host = "localhost";
    protected $DB_user = "ludmila";
@@ -14,9 +15,6 @@ class tempModel {
     catch(PDOException $e){
      echo $e->getMessage();
     }
-
-    //include_once '/home/ludmila/www/user.php';
-    //$user = new USER($DB_con);
     return $DB_con;
    }
 
@@ -28,6 +26,41 @@ class tempModel {
    protected function decon($DB_con){
     $DB_con = null;
    }
+
+   public function user_connect(){
+    $DB_con = $this-> connexion($this->DB_host,$this->DB_name,$this->DB_pass,$this->DB_user);
+    $user = new USER($DB_con);
+    if($user->is_loggedin()!="")
+        {
+        $user->redirect('Profil.php');
+        }
+
+        if(isset($_POST['btn-login']))
+        {
+       
+        $uname = $_POST['email'];
+        $upass = $_POST['psw'];
+        
+        if($user->login($uname,$upass))
+        {
+        
+        $user->redirect('Profil.php');
+        }
+        else
+        {
+
+            $error = "Nom ou mot de passe incorrect!";
+            ?>
+            <div class="alert alert-danger">
+                <i class="glyphicon glyphicon-warning-sign"></i>&nbsp; <?php echo $error; ?> !
+            </div>
+            <?php
+    
+        } 
+    }
+    return $user;
+}
+
    
    public function menu(){
     $menu = array();
