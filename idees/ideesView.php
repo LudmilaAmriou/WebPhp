@@ -90,7 +90,7 @@ Class ideesView {
        
     </div>
    <div class = "contain-closed" id = "show">
-   <h4>Ingredients</h4>
+   <h4>Cocher les ingredients(70%)</h4>
     <form method="POST" id = 'formu' action = '' class="list-group">
     <div class="list-group-item checkbox">
     <?php
@@ -107,7 +107,7 @@ Class ideesView {
 
                     ?>
 	</div>
-    <input class="btn btn-outline-danger" id='confirme' type="submit" value="Submit">
+  
     </form>
     </div>
 	<?php
