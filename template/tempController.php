@@ -25,9 +25,14 @@ class tempController{
 
     public function user_connect(){
         $m = new tempModel();
-        return $m->user_connect();
+        $m->user_connect();
     }
-    
+
+    public function afficher_inscription(){
+        $v = new templateView();
+       
+        return $v->afficher_inscription();  
+    }
     
     public function footer(){
         $v = new templateView();

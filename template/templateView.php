@@ -78,6 +78,38 @@ Class templateView {
         <?php
         }
 
+        public function afficher_inscription(){
+        ?>
+        <link  rel="stylesheet" type="text/css"  href="/ajouterRecette/ajoutRecette.css">
+        <div class = "information">
+      
+        <h3>Vous n'avez pas de compte ? Inscrivez vous!</h3>
+        <p style= "color:grey; margin-left:10%">Si vous etes deja inscrit appuyez sur le boutton "Se connecter"</p>
+        <form id="add-recipe-form" method = "POST" action="">
+
+         <label for="nom">Nom: </label>
+         <input type="text" id="nom" name="nom" />
+
+            
+         <label for="nom">Prenom: </label>
+         <input type="text" id="prenom" name="prenom" />
+         
+         <label for="mail">email: </label>
+         <input type="email" id="mail" name="mail" />
+         
+         <label for="date">Date de naissance: </label>
+         <input type="date" name="date" id="date" />
+        
+         <label for="mdp">Mot de passe:</label>
+        <input type="password" id="mdp" name="mdp" />
+
+        <input type="hidden" name="submit" value="submit" />
+        <input type="submit" value="Confirmer l'inscription" />
+       </form>
+        <?php
+        }
+
+
 
     public function footer(){
         ?> 

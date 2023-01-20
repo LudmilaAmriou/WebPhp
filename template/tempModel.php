@@ -32,7 +32,12 @@ class tempModel {
     $user = new USER($DB_con);
     if($user->is_loggedin()!="")
         {
-        $user->redirect('Profil.php');
+            echo "hellooo".$user->user()["nom"];
+            if ($user->user()["mail"] == "admin"){
+                $user->redirect('AccueilAdmin.php');
+             } else{
+                 $user->redirect('Profil.php');
+             }
         }
 
         if(isset($_POST['btn-login']))
@@ -43,8 +48,12 @@ class tempModel {
         
         if($user->login($uname,$upass))
         {
-        
-        $user->redirect('Profil.php');
+          
+            if ($user->user()['mail'] == "admin"){
+               $user->redirect('AccueilAdmin.php');
+            } else{
+                $user->redirect('Profil.php');
+            }
         }
         else
         {
@@ -58,8 +67,6 @@ class tempModel {
     
         } 
     }
-    $USER = $user->user();
-    return $USER;
 }
 
    
