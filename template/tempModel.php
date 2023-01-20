@@ -57,10 +57,10 @@ class tempModel {
         }
         elseif ($user->user()['valide']==0){
 
-            $error = "Veuillez attendre la validation de l'administrateur!";
+            $error = "Veuillez attendre la validation de l'administrateur";
             ?>
             <div class="alert alert-danger">
-                <i class="glyphicon glyphicon-warning-sign"></i>&nbsp; <?php echo $error; ?> !
+                <i class="glyphicon glyphicon-warning-sign"></i>&nbsp; <?php echo $error; ?> 
             </div>
             <?php
         }
