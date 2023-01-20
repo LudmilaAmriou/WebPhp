@@ -81,11 +81,11 @@ Class templateView {
         public function afficher_inscription(){
         ?>
         <link  rel="stylesheet" type="text/css"  href="/ajouterRecette/ajoutRecette.css">
-        <div class = "information">
+        <div id = "result" class = "information">
       
         <h3>Vous n'avez pas de compte ? Inscrivez vous!</h3>
         <p style= "color:grey; margin-left:10%">Si vous etes deja inscrit appuyez sur le boutton "Se connecter"</p>
-        <form id="add-recipe-form" method = "POST" action="">
+        <form id="add-user-form" method = "POST" action="">
 
          <label for="nom">Nom: </label>
          <input type="text" id="nom" name="nom" />

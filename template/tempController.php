@@ -33,6 +33,17 @@ class tempController{
        
         return $v->afficher_inscription();  
     }
+
+    public function addUser(){
+        $m = new tempModel();
+        $nom =$_POST['nom'];
+        $prenom =$_POST['prenom'];
+        $mail =$_POST['mail'];
+        $date =$_POST['date'];
+        $mdp=$_POST['mdp'];
+
+        return $m->addUser($nom,$prenom,$mail,$date,$mdp);
+    }
     
     public function footer(){
         $v = new templateView();
