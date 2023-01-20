@@ -26,7 +26,12 @@ class adminView{
            </div>
        </div>
         <?php
-    }    
+    }  
+    
+    public function afficher_deconn(){
+      echo '<div style = "position:absolute; top:10%; left:5%"><h3>Bienvenu Admin,'.$_SESSION['user_session']['nom']. ' ' .$_SESSION['user_session']['prenom']. '<h3>
+      </div> <a style = "text-decoration: none; color:#740000; border-radius:5px; border: 1px solid #740000; padding: 6px; position:absolute; top:5%; right:9%" href="Logout.php?logout=true"> Se deconnecter</a>';
+    }
  }
 
 

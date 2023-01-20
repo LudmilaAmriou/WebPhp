@@ -10,6 +10,11 @@ class adminController{
         return $v->afficher_cadres();  
     }
 
+    public function afficher_deconn(){
+        $v = new adminView();
+        return $v->afficher_deconn();  
+    }
+
 
     public function afficher_accAd(){
         $c = new tempController();
